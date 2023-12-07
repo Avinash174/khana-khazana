@@ -11,13 +11,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Text(
-          'Hello, Avinash Magar',
-          style: GoogleFonts.poppins(
-            fontSize: 20.0,
-            fontWeight: FontWeight.w700,
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          child: Text(
+            'Hello, Avinash Magar',
+            style: GoogleFonts.poppins(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w700,
+            ),
           ),
         ),
       ),
