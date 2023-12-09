@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     child: Image.asset(
-                      'assets/icons/icon_ice_cream.jpeg',
+                      'assets/icons/icon_pizza.jpeg',
                       height: 50,
                       width: 50,
                     ),
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     child: Image.asset(
-                      'assets/icons/icon_ice_cream.jpeg',
+                      'assets/icons/icon_salad.png',
                       height: 50,
                       width: 50,
                     ),
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     child: Image.asset(
-                      'assets/icons/icon_ice_cream.jpeg',
+                      'assets/icons/icon_burger.png',
                       height: 50,
                       width: 50,
                     ),
