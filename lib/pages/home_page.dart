@@ -9,6 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  bool pizza = false, icecream = false, salad = false, burger = false;
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 1;
@@ -73,67 +74,110 @@ class _HomePageState extends State<HomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Material(
-                  elevation: 5,
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+                GestureDetector(
+                  onTap: () {
+                    icecream = true;
+                    pizza = false;
+                    salad = false;
+                    burger = false;
+                    setState(() {});
+                  },
+                  child: Material(
+                    elevation: 5,
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: icecream ? Colors.pink : Colors.white,
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(20),
+                        ),
                       ),
-                    ),
-                    child: Image.asset(
-                      'assets/icons/icon_ice_cream.jpeg',
-                      height: 50,
-                      width: 50,
+                      child: Image.asset(
+                        'assets/icons/icon_icecream.png',
+                        fit: BoxFit.cover,
+                        height: 40,
+                        width: 40,
+                      ),
                     ),
                   ),
                 ),
-                Material(
-                  elevation: 5,
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+                GestureDetector(
+                  onTap: () {
+                    icecream = false;
+                    pizza = true;
+                    salad = false;
+                    burger = false;
+                    setState(() {});
+                  },
+                  child: Material(
+                    elevation: 5,
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: icecream ? Colors.green : Colors.white,
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(20),
+                        ),
                       ),
-                    ),
-                    child: Image.asset(
-                      'assets/icons/icon_pizza.jpeg',
-                      height: 50,
-                      width: 50,
+                      child: Image.asset(
+                        'assets/icons/icon_pizza.jpeg',
+                        height: 40,
+                        width: 40,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
-                Material(
-                  elevation: 5,
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+                GestureDetector(
+                  onTap: () {
+                    icecream = false;
+                    pizza = false;
+                    salad = true;
+                    burger = false;
+                    setState(() {});
+                  },
+                  child: Material(
+                    elevation: 5,
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
                       ),
-                    ),
-                    child: Image.asset(
-                      'assets/icons/icon_salad.png',
-                      height: 50,
-                      width: 50,
+                      child: Image.asset(
+                        'assets/icons/icon_salad.png',
+                        fit: BoxFit.cover,
+                        height: 40,
+                        width: 40,
+                      ),
                     ),
                   ),
                 ),
-                Material(
-                  elevation: 5,
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+                GestureDetector(
+                  onTap: () {
+                    icecream = false;
+                    pizza = false;
+                    salad = false;
+                    burger = true;
+                    setState(() {});
+                  },
+                  child: Material(
+                    elevation: 5,
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: icecream ? Colors.red : Colors.white,
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(20),
+                        ),
                       ),
-                    ),
-                    child: Image.asset(
-                      'assets/icons/icon_burger.png',
-                      height: 50,
-                      width: 50,
+                      child: Image.asset(
+                        'assets/icons/icon_burger.png',
+                        height: 40,
+                        width: 40,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
