@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(
-              height: height * .010,
+              height: height * .01,
             ),
             Text(
               'Discoverd and Get Great Food',
@@ -67,6 +67,78 @@ class _HomePageState extends State<HomePage> {
                 fontWeight: FontWeight.w500,
               ),
             ),
+            SizedBox(
+              height: height * .020,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Material(
+                  elevation: 5,
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image.asset(
+                      'assets/icons/icon_ice_cream.jpeg',
+                      height: 50,
+                      width: 50,
+                    ),
+                  ),
+                ),
+                Material(
+                  elevation: 5,
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image.asset(
+                      'assets/icons/icon_ice_cream.jpeg',
+                      height: 50,
+                      width: 50,
+                    ),
+                  ),
+                ),
+                Material(
+                  elevation: 5,
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image.asset(
+                      'assets/icons/icon_ice_cream.jpeg',
+                      height: 50,
+                      width: 50,
+                    ),
+                  ),
+                ),
+                Material(
+                  elevation: 5,
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image.asset(
+                      'assets/icons/icon_ice_cream.jpeg',
+                      height: 50,
+                      width: 50,
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
