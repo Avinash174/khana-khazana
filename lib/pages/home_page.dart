@@ -18,8 +18,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         margin: const EdgeInsets.only(
           top: 50.0,
-          left: 15.0,
-          right: 15.0,
+          left: 20.0,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,6 +34,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Container(
+                  margin: const EdgeInsets.all(20),
                   padding: const EdgeInsets.all(3),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
@@ -71,58 +71,66 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: height * .020,
             ),
-            showItem(),
+            Container(
+              margin: EdgeInsets.only(right: 20.0),
+              child: showItem(),
+            ),
             SizedBox(
               height: height * .020,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Material(
-                    elevation: 5.0,
-                    borderRadius: BorderRadius.circular(20),
-                    child: Container(
-                      padding: const EdgeInsets.all(10),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/img_salad.jpeg',
-                            height: 120,
-                            width: 150,
-                          ),
-                          Text(
-                            'Veggie Taco Hash',
-                            style: GoogleFonts.poppins(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w800,
+                  Container(
+                    margin: const EdgeInsets.all(10),
+                    child: Material(
+                      elevation: 5.0,
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              'assets/images/img_salad.jpeg',
+                              height: 120,
+                              width: 150,
                             ),
-                          ),
-                          SizedBox(
-                            height: height * .01,
-                          ),
-                          Text(
-                            'Fresh And Healthy',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
+                            Text(
+                              'Veggie Taco Hash',
+                              style: GoogleFonts.poppins(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            height: height * .01,
-                          ),
-                          Text(
-                            'RS. 200',
-                            style: GoogleFonts.poppins(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400,
+                            SizedBox(
+                              height: height * .01,
                             ),
-                          ),
-                        ],
+                            Text(
+                              'Fresh And Healthy',
+                              style: GoogleFonts.poppins(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            SizedBox(
+                              height: height * .01,
+                            ),
+                            Text(
+                              'RS. 200',
+                              style: GoogleFonts.poppins(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
+                  ),
+                  SizedBox(
+                    width: width * .015,
                   ),
                   Material(
                     elevation: 5.0,
@@ -138,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                             width: 150,
                           ),
                           Text(
-                            'Veggie Taco Hash',
+                            'Mixed Veg Salad',
                             style: GoogleFonts.poppins(
                               fontSize: 18,
                               fontWeight: FontWeight.w800,
@@ -148,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                             height: height * .01,
                           ),
                           Text(
-                            'Fresh And Healthy',
+                            'Spicy With Onion',
                             style: GoogleFonts.poppins(
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
@@ -158,7 +166,7 @@ class _HomePageState extends State<HomePage> {
                             height: height * .01,
                           ),
                           Text(
-                            'RS. 200',
+                            'RS. 350',
                             style: GoogleFonts.poppins(
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
