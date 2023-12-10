@@ -71,122 +71,224 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: height * .020,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    icecream = true;
-                    pizza = false;
-                    salad = false;
-                    burger = false;
-                    setState(() {});
-                  },
-                  child: Material(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(8),
-                    ),
-                    elevation: 5,
+            showItem(),
+            SizedBox(
+              height: height * .020,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Material(
+                    elevation: 5.0,
+                    borderRadius: BorderRadius.circular(20),
                     child: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: icecream ? Colors.brown : Colors.white,
-                      ),
-                      child: Image.asset(
-                        'assets/icons/icon_icecream.png',
-                        fit: BoxFit.cover,
-                        height: 40,
-                        width: 40,
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/img_salad.jpeg',
+                            height: 120,
+                            width: 150,
+                          ),
+                          Text(
+                            'Veggie Taco Hash',
+                            style: GoogleFonts.poppins(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          SizedBox(
+                            height: height * .01,
+                          ),
+                          Text(
+                            'Fresh And Healthy',
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(
+                            height: height * .01,
+                          ),
+                          Text(
+                            'RS. 200',
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    icecream = false;
-                    pizza = true;
-                    salad = false;
-                    burger = false;
-                    setState(() {});
-                  },
-                  child: Material(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(8),
-                    ),
-                    elevation: 5,
+                  Material(
+                    elevation: 5.0,
+                    borderRadius: BorderRadius.circular(20),
                     child: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: pizza ? Colors.orangeAccent : Colors.white,
-                      ),
-                      child: Image.asset(
-                        'assets/icons/icon_pizza.png',
-                        height: 40,
-                        width: 40,
-                        fit: BoxFit.cover,
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/img_salad.jpeg',
+                            height: 120,
+                            width: 150,
+                          ),
+                          Text(
+                            'Veggie Taco Hash',
+                            style: GoogleFonts.poppins(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          SizedBox(
+                            height: height * .01,
+                          ),
+                          Text(
+                            'Fresh And Healthy',
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(
+                            height: height * .01,
+                          ),
+                          Text(
+                            'RS. 200',
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    icecream = false;
-                    pizza = false;
-                    salad = true;
-                    burger = false;
-                    setState(() {});
-                  },
-                  child: Material(
-                    elevation: 5,
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(8),
-                    ),
-                    child: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: salad ? Colors.greenAccent : Colors.white,
-                      ),
-                      child: Image.asset(
-                        'assets/icons/icon_salad.png',
-                        fit: BoxFit.cover,
-                        height: 40,
-                        width: 40,
-                      ),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    icecream = false;
-                    pizza = false;
-                    salad = false;
-                    burger = true;
-                    setState(() {});
-                  },
-                  child: Material(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(8),
-                    ),
-                    elevation: 5,
-                    child: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: burger ? Colors.amber : Colors.white,
-                      ),
-                      child: Image.asset(
-                        'assets/icons/icon_burger.png',
-                        height: 40,
-                        width: 40,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             )
           ],
         ),
       ),
+    );
+  }
+
+  Widget showItem() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        GestureDetector(
+          onTap: () {
+            icecream = true;
+            pizza = false;
+            salad = false;
+            burger = false;
+            setState(() {});
+          },
+          child: Material(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(8),
+            ),
+            elevation: 5,
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: icecream ? Colors.brown : Colors.white,
+              ),
+              child: Image.asset(
+                'assets/icons/icon_icecream.png',
+                fit: BoxFit.cover,
+                height: 40,
+                width: 40,
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () {
+            icecream = false;
+            pizza = true;
+            salad = false;
+            burger = false;
+            setState(() {});
+          },
+          child: Material(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(8),
+            ),
+            elevation: 5,
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: pizza ? Colors.orangeAccent : Colors.white,
+              ),
+              child: Image.asset(
+                'assets/icons/icon_pizza.png',
+                height: 40,
+                width: 40,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () {
+            icecream = false;
+            pizza = false;
+            salad = true;
+            burger = false;
+            setState(() {});
+          },
+          child: Material(
+            elevation: 5,
+            borderRadius: const BorderRadius.all(
+              Radius.circular(8),
+            ),
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: salad ? Colors.greenAccent : Colors.white,
+              ),
+              child: Image.asset(
+                'assets/icons/icon_salad.png',
+                fit: BoxFit.cover,
+                height: 40,
+                width: 40,
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () {
+            icecream = false;
+            pizza = false;
+            salad = false;
+            burger = true;
+            setState(() {});
+          },
+          child: Material(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(8),
+            ),
+            elevation: 5,
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: burger ? Colors.amber : Colors.white,
+              ),
+              child: Image.asset(
+                'assets/icons/icon_burger.png',
+                height: 40,
+                width: 40,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
