@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: icecream ? Colors.pink : Colors.white,
+                        color: icecream ? Colors.brown : Colors.white,
                       ),
                       child: Image.asset(
                         'assets/icons/icon_icecream.png',
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: pizza ? Colors.green : Colors.white,
+                        color: pizza ? Colors.orangeAccent : Colors.white,
                       ),
                       child: Image.asset(
                         'assets/icons/icon_pizza.png',
@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: salad ? Colors.red : Colors.white,
+                        color: salad ? Colors.greenAccent : Colors.white,
                       ),
                       child: Image.asset(
                         'assets/icons/icon_salad.png',
@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: burger ? Colors.red : Colors.white,
+                        color: burger ? Colors.amber : Colors.white,
                       ),
                       child: Image.asset(
                         'assets/icons/icon_burger.png',
