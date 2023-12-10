@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: icecream ? Colors.green : Colors.white,
+                        color: pizza ? Colors.green : Colors.white,
                         borderRadius: const BorderRadius.all(
                           Radius.circular(20),
                         ),
@@ -140,8 +140,9 @@ class _HomePageState extends State<HomePage> {
                     elevation: 5,
                     child: Container(
                       padding: const EdgeInsets.all(8),
-                      decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.all(
+                      decoration: BoxDecoration(
+                        color: salad ? Colors.red : Colors.white,
+                        borderRadius: const BorderRadius.all(
                           Radius.circular(20),
                         ),
                       ),
@@ -167,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: icecream ? Colors.red : Colors.white,
+                        color: burger ? Colors.red : Colors.white,
                         borderRadius: const BorderRadius.all(
                           Radius.circular(20),
                         ),
