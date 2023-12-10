@@ -83,14 +83,14 @@ class _HomePageState extends State<HomePage> {
                     setState(() {});
                   },
                   child: Material(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(8),
+                    ),
                     elevation: 5,
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: icecream ? Colors.pink : Colors.white,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(20),
-                        ),
                       ),
                       child: Image.asset(
                         'assets/icons/icon_icecream.png',
@@ -110,17 +110,17 @@ class _HomePageState extends State<HomePage> {
                     setState(() {});
                   },
                   child: Material(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(8),
+                    ),
                     elevation: 5,
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: pizza ? Colors.green : Colors.white,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(20),
-                        ),
                       ),
                       child: Image.asset(
-                        'assets/icons/icon_pizza.jpeg',
+                        'assets/icons/icon_pizza.png',
                         height: 40,
                         width: 40,
                         fit: BoxFit.cover,
@@ -138,13 +138,13 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: Material(
                     elevation: 5,
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(8),
+                    ),
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: salad ? Colors.red : Colors.white,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(20),
-                        ),
                       ),
                       child: Image.asset(
                         'assets/icons/icon_salad.png',
@@ -164,14 +164,14 @@ class _HomePageState extends State<HomePage> {
                     setState(() {});
                   },
                   child: Material(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(8),
+                    ),
                     elevation: 5,
                     child: Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: burger ? Colors.red : Colors.white,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(20),
-                        ),
                       ),
                       child: Image.asset(
                         'assets/icons/icon_burger.png',
